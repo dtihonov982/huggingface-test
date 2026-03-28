@@ -25,7 +25,7 @@ print("GPU tensor ops: OK")
 print("\n=== HuggingFace Model Test ===")
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-model_name = "microsoft/phi-2"  # small 2.7B model
+model_name = "gpt2"
 print(f"Loading {model_name}...")
 
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
