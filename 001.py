@@ -9,7 +9,7 @@ print(f"CUDA version:     {torch.version.cuda}")
 print(f"GPU count:        {torch.cuda.device_count()}")
 if torch.cuda.is_available():
     print(f"GPU name:         {torch.cuda.get_device_name(0)}")
-    mem = torch.cuda.get_device_properties(0).total_mem / 1e9
+    mem = torch.cuda.get_device_properties(0).total_memory / 1e9
     print(f"GPU memory:       {mem:.1f} GB")
     print(f"BF16 supported:   {torch.cuda.is_bf16_supported()}")
 
